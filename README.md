@@ -1,6 +1,10 @@
-# HaticePortfolio
+# RN Portfolio
 
 Bu proje, React Native kullanılarak geliştirilmiş kişisel bir portfolyo mobil uygulamasıdır. Uygulama, geliştiricinin biyografisini, yeteneklerini, projelerini ve iletişim bilgilerini modern ve kullanıcı dostu bir arayüzle sunmayı amaçlamaktadır.
+
+# Ekran Görüntüsü
+
+![](/src/assets/Screen-2026-01-20-003038.gif)
 
 ## Özellikler
 
