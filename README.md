@@ -1,97 +1,64 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# HaticePortfolio
 
-# Getting Started
+Bu proje, React Native kullanılarak geliştirilmiş kişisel bir portfolyo mobil uygulamasıdır. Uygulama, geliştiricinin biyografisini, yeteneklerini, projelerini ve iletişim bilgilerini modern ve kullanıcı dostu bir arayüzle sunmayı amaçlamaktadır.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Özellikler
 
-## Step 1: Start Metro
+Uygulama aşağıdaki ana bölümlerden oluşmaktadır:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- **Ana Sayfa (Home):** Kullanıcıyı karşılayan giriş ekranı. Profil fotoğrafı, kısa biyografi, öne çıkan yetenekler ve projelerin özetini içerir.
+- **Hakkımda (About):** Geliştiricinin eğitim geçmişi, iş deneyimleri, sunduğu hizmetler ve ilgi alanları hakkında detaylı bilgi verir.
+- **Projeler (Projects):** Geliştirilen mobil ve web projelerinin listelendiği, detaylı açıklamaların ve kullanılan teknolojilerin yer aldığı bölümdür.
+- **İletişim (Contact):** Kullanıcıların geliştirici ile iletişime geçebilmesi için gerekli bilgileri ve formu içerir.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Kullanılan Teknolojiler
 
-```sh
-# Using npm
-npm start
+Proje geliştirme sürecinde aşağıdaki teknolojiler ve kütüphaneler kullanılmıştır:
 
-# OR using Yarn
-yarn start
-```
+- **React Native:** Çapraz platform mobil uygulama geliştirme çerçevesi.
+- **TypeScript:** Statik tip kontrolü sağlayan JavaScript üst kümesi.
+- **NativeWind (Tailwind CSS):** React Native için stil yönetim kütüphanesi.
+- **React Navigation:** Uygulama içi yönlendirme ve navigasyon yönetimi (Stack ve Bottom Tabs).
+- **React Native Vector Icons:** Uygulama genelinde kullanılan ikon seti (Ionicons).
+- **React Native Reanimated:** Performanslı animasyonlar için kullanılan kütüphane.
+- **React Native Safe Area Context:** Çentikli ekranlar ve güvenli alan yönetimi için.
 
-## Step 2: Build and run your app
+## Kurulum ve Çalıştırma
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-### Android
+1.  **Depoyu Klonlayın:**
+    Projeyi bilgisayarınıza indirin.
 
-```sh
-# Using npm
-npm run android
+2.  **Bağımlılıkları Yükleyin:**
+    Proje dizininde terminali açın ve gerekli paketleri yükleyin.
 
-# OR using Yarn
-yarn android
-```
+    ```bash
+    npm install
+    ```
 
-### iOS
+3.  **iOS İçin Kurulum (Sadece macOS):**
+    CocoaPods bağımlılıklarını yükleyin.
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+    ```bash
+    cd ios
+    pod install
+    cd ..
+    ```
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+4.  **Uygulamayı Başlatın:**
 
-```sh
-bundle install
-```
+    - **iOS için:**
 
-Then, and every time you update your native dependencies, run:
+      ```bash
+      npx react-native run-ios
+      ```
 
-```sh
-bundle exec pod install
-```
+    - **Android için:**
+      ```bash
+      npx react-native run-android
+      ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## Lisans
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Bu proje kişisel kullanım için geliştirilmiştir. Tüm hakları saklıdır.
